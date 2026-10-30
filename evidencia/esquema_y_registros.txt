@@ -1,0 +1,23 @@
+SQLITE: analytics.db, generado realmente por main.py (ejemplo ficticio).
+
+TABLA: datasets
+CREATE TABLE datasets (
+	id INTEGER NOT NULL, 
+	name VARCHAR(120) NOT NULL, 
+	source_url VARCHAR(500) NOT NULL, 
+	num_rows INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	CONSTRAINT ck_datasets_num_rows_no_negativo CHECK (num_rows >= 0)
+)
+  Ejemplo de fila: (1, 'Ventas de prueba', 'https://example.com/datasets/ventas_demo.csv', 1500)
+
+TABLA: model_experiments
+CREATE TABLE model_experiments (
+	id INTEGER NOT NULL, 
+	algorithm_name VARCHAR(120) NOT NULL, 
+	accuracy FLOAT NOT NULL, 
+	is_deployed BOOLEAN NOT NULL, 
+	PRIMARY KEY (id), 
+	CONSTRAINT ck_model_experiments_accuracy CHECK (accuracy >= 0 AND accuracy <= 1)
+)
+  Ejemplo de fila: (1, 'RandomForest (demostración)', 0.87, 0)

@@ -1,0 +1,31 @@
+TABLAS CREADAS / VERIFICADAS: datasets, model_experiments
+OBJETOS ORM INSTANCIADOS:
+  Dataset: Ventas de prueba | filas: 1500
+  ModelExperiment: RandomForest (demostración) | accuracy: 0.87 | desplegado: False
+DATOS PERSISTIDOS: 1 datasets y 1 experimentos
+ARCHIVO GENERADO: analytics.db
+VALIDACIONES FINALES: OK
+test_01_base_declarativa_20 (test_models.TestSQLAlchemy20.test_01_base_declarativa_20) ... ok
+test_02_tablas_y_nombres (test_models.TestSQLAlchemy20.test_02_tablas_y_nombres) ... ok
+test_03_dataset_campos_y_pk (test_models.TestSQLAlchemy20.test_03_dataset_campos_y_pk) ... ok
+test_04_experimento_campos_y_pk (test_models.TestSQLAlchemy20.test_04_experimento_campos_y_pk) ... ok
+test_05_tipos_de_columnas (test_models.TestSQLAlchemy20.test_05_tipos_de_columnas) ... ok
+test_06_mapped_typed (test_models.TestSQLAlchemy20.test_06_mapped_typed) ... ok
+test_07_instancia_de_ambos_modelos (test_models.TestSQLAlchemy20.test_07_instancia_de_ambos_modelos) ... ok
+test_08_persistencia_y_lectura_de_ambos (test_models.TestSQLAlchemy20.test_08_persistencia_y_lectura_de_ambos) ... ok
+test_09_restriccion_filas_no_negativas (test_models.TestSQLAlchemy20.test_09_restriccion_filas_no_negativas) ... ok
+test_10_restriccion_accuracy_0_a_1 (test_models.TestSQLAlchemy20.test_10_restriccion_accuracy_0_a_1) ... ok
+test_11_main_crea_db_fisica_y_ejemplos_idempotentes (test_models.TestSQLAlchemy20.test_11_main_crea_db_fisica_y_ejemplos_idempotentes) ... ok
+test_12_create_all_es_idempotente (test_models.TestSQLAlchemy20.test_12_create_all_es_idempotente) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 2.760s
+
+OK
+TABLAS CREADAS / VERIFICADAS: datasets, model_experiments
+OBJETOS ORM INSTANCIADOS:
+  Dataset: Ventas de prueba | filas: 1500
+  ModelExperiment: RandomForest (demostración) | accuracy: 0.87 | desplegado: False
+DATOS PERSISTIDOS: 1 datasets y 1 experimentos
+ARCHIVO GENERADO: analytics.db
+VALIDACIONES FINALES: OK
